@@ -7,7 +7,7 @@ def find_number_of_rows(data):
         int: Number of rows.
     """
     list1=data.split('\n')
-    return len(list1)
+    return len(list1)-1
 f=open('data.csv','r')
 a=f.read()
 print(find_number_of_rows(a))
